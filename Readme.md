@@ -14,8 +14,8 @@ Os usuários devem ser capazes de:
 
 ### Links
 
-- Solução Frontend Mentor URL: 
-- Live Site URL: 
+- Solução Frontend Mentor URL: https://www.frontendmentor.io/solutions/interactive-rating-component-with-html-css-and-js-M-IA4DWdQO
+- Live Site URL: https://gaberelaa.github.io/AvaliacaoInterativa/
 
 
 

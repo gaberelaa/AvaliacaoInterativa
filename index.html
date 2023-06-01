@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/style.css">
+    <script src="src/js/script.js" defer></script>
+    <link rel="shortcut icon" href="src/images/favicon-32x32.png" type="image/x-icon">
+    <title>Frontend Mentor | Interactive rating component</title>
+</head>
+<body>
+    <main id="principal">
+        <div class="container">
+            <div class="imageArea">
+                <img src="src/images/icon-star.svg" alt="Star Icon" class="icon">
+            </div>
+            <h1>How did we do?</h1>
+            <p>
+                Please let us know how we did with your support request. All feedback is appreciated 
+                to help us improve our offering!
+            </p>
+
+            <div class="rating-inputs">
+                <input type="radio" id="rating-1" name="rating" value="1">
+                <label for="rating-1">1</label>
+
+                <input type="radio" id="rating-2" name="rating" value="2">
+                <label for="rating-2">2</label>
+
+                <input type="radio" id="rating-3" name="rating" value="3">
+                <label for="rating-3">3</label>
+
+                <input type="radio" id="rating-4" name="rating" value="4">
+                <label for="rating-4">4</label>
+
+                <input type="radio" id="rating-5" name="rating" value="5">
+                <label for="rating-5">5</label>
+            </div>
+
+            <span class="error"></span>
+            <button type="submit" class="btn" onclick="submit()">Submit</button>
+        </div>
+    </main>
+</body>
+</html>

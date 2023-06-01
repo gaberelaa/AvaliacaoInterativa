@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+:root {
+    /* Primary Color*/
+
+    --Orange: hsl(25, 97%, 53%);
+    --red: hsl(4, 97%, 53%);
+
+    /* Neutral Color */
+
+    --White: hsl(0, 0%, 100%);
+    --Light-Grey: hsl(217, 12%, 63%);
+    --Medium-Grey: hsla(216, 12%, 54%, 0.171);
+    --Dark-Blue: hsl(213, 19%, 18%);
+    --Very-Dark-Blue: hsl(216, 12%, 8%);
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Overpass', sans-serif;
+    font-weight: 400;
+}
+
+p, h1 {
+    cursor: default;
+}
+
+body {
+    background-color: var(--Very-Dark-Blue);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.container, .container-ty {
+    background-image: linear-gradient(to top, #171E28, #262f3a);
+    width: 26.875rem;
+    height: auto;
+    padding: 1.875rem 1.875rem;
+    border-radius: 1.875rem;
+}
+
+.imageArea {
+    background-color: var(--Medium-Grey);
+    width: 3.125rem;
+    height: 3.125rem;
+    border-radius: 50%;
+    padding: 1.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.875rem;
+}
+
+h1 {
+    font-weight: 700;
+    color: var(--White);
+    font-size: 2rem;
+    margin-bottom: 0.625rem;
+}
+
+.container p {
+    width: 21.875rem;
+    color: var(--Light-Grey);
+    font-size: 1rem;
+}
+
+.rating-inputs {
+    margin: 1.25rem 0rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.rating-inputs input[type="radio"] {
+    display: none;
+}
+
+.rating-inputs label {
+    background-color: var(--Medium-Grey);
+    width: 3.125rem;
+    height: 3.125rem;
+    border-radius: 50%;
+    color: var(--Light-Grey);
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.rating-inputs input[type="radio"]:checked + label {
+    background-color: var(--Orange);
+    color: var(--White);
+    transition: 0.2s ease-in;
+}
+
+.rating-inputs input[type="radio"]:hover + label {
+    background-color: var(--Light-Grey);
+    color: var(--White);
+    transition: 0.4s ease-in-out;
+}
+
+.btn {
+    width: 100%;
+    height: 2.813rem;
+    text-transform: uppercase;
+    color: var(--White);
+    background-color: var(--Orange);
+    border: none;
+    border-radius: 1.875rem;
+    font-weight: 700;
+    letter-spacing: 0.125rem;
+    margin-top: 0.625rem;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+
+.btn:hover {
+    background-color: var(--White);
+    color: var(--Orange);
+    
+}
+
+
+/* ty area */
+
+.container-ty {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3.125rem 0;
+}
+
+#rateArea {
+    color: var(--Orange);
+    font-weight: 400;
+    background-color: var(--Medium-Grey);
+    padding: 0.313rem 1.25rem;
+    border-radius: 1.875rem;
+    margin: 1.875rem;
+    font-size: 0.86rem;
+}
+
+.container-ty p {
+    text-align: center;
+    width: 22.5rem;
+    color: var(--Light-Grey);
+}
+
+.error {
+    display: flex;
+    justify-content: center;
+    color: var(--red);
+    opacity: 40%;
+    font-size: 0.8rem;
+}
+
+@media screen and (min-width: 371px) and (max-width: 765px) {
+    .container, .container-ty {
+        width: 21.8rem;
+    }
+
+    .container-ty p {
+        width: 21.5rem;
+        padding: 0 0.875rem;
+    }
+
+    .container p {
+        width: 20rem;
+        padding-right: 21px;
+        font-size: 0.9rem;
+    }
+}
